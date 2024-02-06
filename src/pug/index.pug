@@ -5,12 +5,12 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='Investing in the next generation of quantum speed AI Fintech Companies')
-        meta(name='author', content='Diophantus Partners LLC')
+        meta(name='description', content='Founding and Investing in the next generation of Tech Companies')
+        meta(name='author', content='Kendall Square Cofoundry')
 
-        title Diophantus.ai
+        title Kendall Square Cofoundry
 
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='assets/img/Kendallsq_logo1.png')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
@@ -26,50 +26,42 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                #company-name(style="font-weight: 700; text-align: left;") Diophantus.ai
+                a.navbar-brand(href='#')
+                    img(src='assets/img/Kendallsq_logo1.png', alt='Kendall Square Cofoundry Logo', style='height: 40px;')
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='strategy.html') Strategy
+                            a.nav-link(href='#about') Strategy
                         li.nav-item
-                            a.nav-link(href='team.html') Team
+                            a.nav-link(href='#team') Team
                         li.nav-item
-                            a.nav-link(href='contact.html') Contact
+                            a.nav-link(href='#contact') Contact
 
         // Masthead
         header.masthead
             .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
-                .d-flex.justify-content-center
-                    .text-center
-                        h1.mx-auto.my-0.text-uppercase Diophantus.ai
-                        h2.text-white-50.mx-auto.mt-2.mb-5 Investing in the next generation of quantum speed AI Fintech Companies
-                        a.btn.btn-primary(href='#about') About Us
+                .text-center
+                    img.img-fluid(src='assets/img/Kendallsq_logo1.png', alt='Kendall Square Cofoundry Logo')
+                    h2.text-white-50.mx-auto.mt-2.mb-5 Founding and Investing in Disruptive Tech Companies
+                    a.btn.btn-primary(href='#about') About Us
+
 
         // About
         section#about.about-section.text-center
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
-                        h2.text-white.mb-4 Built with Bootstrap 5
+                        h2.text-white.mb-4 Built by engineer-founders
                         p.text-white-50
-                            | About the fund...
-                img.img-fluid(src='assets/img/ipad.png', alt='...')
+                            | About the Cofoundry
 
         // Projects
-        section#projects.projects-section.bg-light
+        section#strategy.projects-section.bg-light
             .container.px-4.px-lg-5
-                // Featured Project Row
-                .row.gx-0.mb-4.mb-lg-5.align-items-center
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='...')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Shoreline
-                            p.text-black-50.mb-0
-                                | details about fund...
+
                 // Project One Row
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
@@ -78,10 +70,11 @@ html(lang='en')
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
+                                    h4.text-white Strategy
                                     p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
+                                        | The Cofoundry launches 5-10 MIT-focused Ventures each year.  With the experience and network of the team, plus a seed fund and the ability to source non-dilutive financing, we produce superior returns.
                 // Project Two Row
+                section#team.projects-section.bg-light
                 .row.gx-0.justify-content-center
                     .col-lg-6
                         img.img-fluid(src='assets/img/demo-image-02.jpg', alt='...')
@@ -89,32 +82,33 @@ html(lang='en')
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
+                                    h4.text-white Team
                                     p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well!
-
+                                        | The Cofoundry is run by 
+                                        a(href='https://www.linkedin.com/in/stevederezinski', target='_blank') Steve Derezinski
+                                        | , Entrepreneur, Engineer, Founder and Investor.
 
         // Contact
-        section.contact-section.bg-black
+        section#contact.bg-black
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
-                    .col-md-4.mb-3.mb-md-0
+                    .col-md-6.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-map-marked-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Address
+                                h4.text-uppercase.m-0 Kendall Square / MIT
                                 hr.my-4.mx-auto
                                 .small.text-black-50 Cambridge, MA USA
-                    .col-md-4.mb-3.mb-md-0
+                    .col-md-6.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-envelope.text-primary.mb-2
                                 h4.text-uppercase.m-0 Email
                                 hr.my-4.mx-auto
                                 .small.text-black-50
-                                    a(href='#!') steve@diophantus.ai
-             
-                .social.d-flex.justify-content-center
+                                    a(href='mailto:steve@cofoundry.global') steve@cofoundry.global
+                
+                .social.d-flex.justify-content-center.mt-5
                     a.mx-2(href='#!')
                         i.fab.fa-twitter
                     a.mx-2(href='#!')
@@ -126,7 +120,7 @@ html(lang='en')
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
             .container.px-4.px-lg-5
-                p(style="text-align: center;") &copy; Copyright Diophantus Partners LLC
+                p(style="text-align: center;") &copy; Copyright Platform Technology Ventures LLC, Parent of Cofoundry
                 .social.d-flex.justify-content-center
                     a(href='#') Legal Disclaimer
 
