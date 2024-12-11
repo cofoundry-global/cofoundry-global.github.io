@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
 /*!
@@ -598,7 +598,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -11079,7 +11079,7 @@ body {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -11103,7 +11103,7 @@ body {
   .masthead h1, .masthead .h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.8rem;
   }
   .masthead h2, .masthead .h2 {
     max-width: 30rem;
@@ -11200,16 +11200,4 @@ body {
 
 .footer {
   padding: 5rem 0;
-}
-
-.report.mb-5 {
-  background-color: transparent; /* Ensure the background is transparent */
-  position: relative; /* Ensure proper stacking context */
-  z-index: 1; /* Ensure it is above any background elements */
-}
-
-iframe {
-  border: 0; /* Remove any borders */
-  z-index: 2; /* Ensure iframe is above other elements */
-  position: relative; /* Ensure proper stacking context */
 }
