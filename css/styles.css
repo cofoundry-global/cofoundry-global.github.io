@@ -598,7 +598,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -11200,4 +11200,16 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+.report.mb-5 {
+  background-color: transparent; /* Ensure the background is transparent */
+  position: relative; /* Ensure proper stacking context */
+  z-index: 1; /* Ensure it is above any background elements */
+}
+
+iframe {
+  border: 0; /* Remove any borders */
+  z-index: 2; /* Ensure iframe is above other elements */
+  position: relative; /* Ensure proper stacking context */
 }

@@ -7,8 +7,11 @@
 // Scripts
 // 
 
-window.addEventListener('DOMContentLoaded', event => {
+// Simple test to ensure scripts are loading
+console.log('Script loaded');
 
+// Wait for document ready
+window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -20,7 +23,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -36,6 +38,39 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             rootMargin: '0px 0px -40%',
         });
+    }
+
+    // Show announcement toast
+    window.onload = function() {
+        if (typeof toastr !== 'undefined') {
+            toastr.options = {
+                closeButton: true,
+                debug: false,
+                newestOnTop: false,
+                progressBar: false,
+                positionClass: "toast-top-full-width",
+                preventDuplicates: true,
+                onclick: function() { window.location.href = 'utilitytoken.html'; },
+                showDuration: "300",
+                hideDuration: "1000",
+                timeOut: 0,
+                extendedTimeOut: 0,
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+                tapToDismiss: false
+            };
+
+            toastr.info(
+                "Announcing: Utility Token Safe Harbor Evaluator -- Early Access, click here",
+                null,
+                {
+                    className: 'announcement-toast',
+                    positionClass: 'toast-top-full-width'
+                }
+            );
+        }
     };
 
     // Collapse responsive navbar when toggler is visible
@@ -50,5 +85,4 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
 });
