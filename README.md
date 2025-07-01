@@ -1,12 +1,12 @@
-# [Start Bootstrap - Grayscale](https://startbootstrap.com/theme/grayscale/)
+# Kendall Square Cofoundry Website
 
-[Grayscale](https://startbootstrap.com/theme/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
+This is the official website for Kendall Square Cofoundry, hosted at [cofoundry.global](https://cofoundry.global).
 
-## Preview
+Built with [Start Bootstrap - Grayscale](https://startbootstrap.com/theme/grayscale/) theme and deployed to GitHub Pages.
 
-[![Grayscale Preview](https://assets.startbootstrap.com/img/screenshots/themes/grayscale.png)](https://startbootstrap.github.io/startbootstrap-grayscale/)
+## Live Site
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-grayscale/)**
+**[View Live Site](https://cofoundry.global)**
 
 ## Status
 
@@ -28,9 +28,64 @@ To begin using this template, choose one of the following options to get started
 
 After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-### Advanced Usage
+## 🚀 Making Changes to the Website
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+This site uses a static site generator with Pug templates and SCSS. Follow this workflow for any changes:
+
+### Complete Workflow for Updates
+
+```bash
+# 1. Make changes to source files
+# Edit files in: src/pug/*.pug, src/scss/*.scss, src/assets/*
+
+# 2. Commit your changes 
+git add -A
+git commit -m "Describe your changes"
+
+# 3. Build the site (compiles pug→html, scss→css)
+npm run build
+
+# 4. Deploy to GitHub Pages 
+npm run deploy
+
+# 5. Push to main branch (recommended)
+git push origin main
+```
+
+**Important**: Always follow this complete workflow. Changes to `.pug` files won't appear live until you build and deploy!
+
+### Development Workflow
+
+For local development and testing:
+
+```bash
+# Install dependencies (first time only)
+npm install
+
+# Start development server with live reload
+npm start
+
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+### Site Structure
+
+- **Source files**: `/src/pug/` (templates), `/src/scss/` (styles), `/src/assets/` (images)
+- **Built files**: `/dist/` (generated HTML, CSS, JS - don't edit directly)
+- **Live site**: Served from `gh-pages` branch at [cofoundry.global](https://cofoundry.global)
+
+### Troubleshooting
+
+**Changes not appearing live?**
+1. Ensure you committed your source file changes
+2. Run `npm run build` to compile templates
+3. Run `npm run deploy` to publish
+4. Wait 5-10 minutes for GitHub Pages cache
+5. Clear Cloudflare cache if needed
 
 #### npm Scripts
 

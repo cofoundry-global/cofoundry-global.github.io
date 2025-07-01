@@ -22,7 +22,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">Strategy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -60,8 +60,15 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Strategy</h4>
-                                    <p class="mb-0 text-white-50">The Cofoundry launches disruptive Ventures each year. With the experience and network of the team, plus the ability to source non-dilutive financing, we produce excellent portfolio companies.</p>
+                                    <h4 class="text-white">Fractional CTO or CAIO Services</h4>
+                                    <p class="mb-0 text-white-50">Whether you are early-stage or Series A or anything in between, we offer fractional CTO and CAIO -- Chief AI Officer Services to fit your needs.</p>
+                                    <p class="mb-0 text-white-50 mt-3">In discussions with our clients, we find they have a need for senior technologists with business talent. To not only solve the technical or engineering problems, but to provide the pathway to deploy the solution internally and/or externally. This requires senior, experienced talent that not many companies can afford (nor need) a full-time position for, but certainly need the experience.</p>
+                                    <h5 class="text-white mt-4">Fractional CTO</h5>
+                                    <p class="mb-0 text-white-50">We offer fractional CTO services for early-stage companies on a retainer-plus basis. This allows a company to have solid technical expertise to avoid major issues and save cash for expansion or pushing their company even further.</p>
+                                    <h5 class="text-white mt-4">Fractional CAIO</h5>
+                                    <p class="mb-0 text-white-50">We offer fractional CAIO services or Chief AI Officer. Given the fast pace of AI and its potential to disrupt, there are many challenges to watch for: competitor adoption, appropriate use (or misuse) of AI. We help all companies figure out their best "right-size" plan for AI adoption.</p>
+                                    <p class="mb-0 text-white-50 mt-3">AI is a powerful tool. Used correctly, it can be wonderfully supportive. Used incorrectly and it can cause damage. We help you use AI for powerful positive enhancements to the companies bottomline and avoid damaging errors or issues.</p>
+                                    <p class="mb-0 text-white-50 mt-4"><strong>| Reach out today for an initial consultation. Please fill out the info below to schedule a call:</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -134,55 +141,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
-        <!-- Announcement banner-->
-        <script>
-            window.onload = function () {
-                if (typeof toastr !== 'undefined') {
-                    toastr.options = {
-                        closeButton: true,
-                        debug: false,
-                        newestOnTop: false,
-                        progressBar: false,
-                        positionClass: 'toast-top-full-width',
-                        preventDuplicates: true,
-                        onclick: function () {
-                            window.location.href = 'utilitytoken.html';
-                        },
-                        showDuration: '300',
-                        hideDuration: '1000',
-                        timeOut: 0,
-                        extendedTimeOut: 0,
-                        showEasing: 'swing',
-                        hideEasing: 'linear',
-                        showMethod: 'fadeIn',
-                        hideMethod: 'fadeOut',
-                        tapToDismiss: false,
-                        onHidden: function () {
-                            // When toast is dismissed, move navbar up and adjust body padding
-                            const mainNav = document.querySelector('#mainNav');
-                            const body = document.body;
-                            if (mainNav) {
-                                mainNav.classList.add('no-announcement');
-                                body.classList.add('no-announcement');
-                            }
-                        },
-                    };
-
-                    // Force the navbar down initially
-                    const mainNav = document.querySelector('#mainNav');
-                    if (mainNav) {
-                        mainNav.style.position = 'fixed';
-                        mainNav.style.top = '48px';
-                    }
-
-                    setTimeout(function () {
-                        toastr.info('Announcing: Utility Token Safe Harbor Evaluator -- Early Access, click here', null, {
-                            className: 'announcement-toast',
-                            positionClass: 'toast-top-full-width',
-                        });
-                    }, 500);
-                }
-            };
-        </script>
     </body>
 </html>
