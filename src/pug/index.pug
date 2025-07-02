@@ -43,43 +43,49 @@ html(lang='en')
                     h2.text-white-50.mx-auto.mt-2.mb-5 Founding Disruptive Tech Companies
                     a.btn.btn-primary(href='#about') About Us
 
-
         // About
         section#about.about-section.text-center
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
                         h2.text-white.mb-4 Built by engineer-founders
-                        p.text-white-50
+                        p.text-yellow
                             | About the Cofoundry
 
         // Projects
         section#strategy.projects-section.bg-light
-            .container.px-4.px-lg-5
+            // Changed to container-fluid and removed padding for full width
+            .container-fluid.px-0
 
-                // Project One Row
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
-                    .col-lg-6
-                        .bg-black.text-center.h-100.project
+                // Project One Row - Now full width
+                .row.gx-0.mb-5.mb-lg-0.position-relative
+                    // Background image now absolute positioned
+                    .col-12.position-absolute.h-100
+                        img.img-fluid.w-100.h-100.object-fit-cover(src='assets/img/demo-image-01.jpg', alt='...', style='object-fit: cover;')
+                    // Content now takes full width and overlays the image
+                    .col-12.position-relative
+                        .bg-black.bg-opacity-75.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Fractional CTO or CAIO Services
-                                    p.mb-0.text-white-50
-                                        | Whether you are early-stage or Series A or anything in between, we offer fractional CTO and CAIO -- Chief AI Officer Services to fit your needs.
-                                    p.mb-0.text-white-50.mt-3
-                                        | In discussions with our clients, we find they have a need for senior technologists with business talent. To not only solve the technical or engineering problems, but to provide the pathway to deploy the solution internally and/or externally. This requires senior, experienced talent that not many companies can afford (nor need) a full-time position for, but certainly need the experience.
-                                    h5.text-white.mt-4 Fractional CTO
-                                    p.mb-0.text-white-50
-                                        | We offer fractional CTO services for early-stage companies on a retainer-plus basis. This allows a company to have solid technical expertise to avoid major issues and save cash for expansion or pushing their company even further.
-                                    h5.text-white.mt-4 Fractional CAIO
-                                    p.mb-0.text-white-50
-                                        | We offer fractional CAIO services or Chief AI Officer. Given the fast pace of AI and its potential to disrupt, there are many challenges to watch for: competitor adoption, appropriate use (or misuse) of AI. We help all companies figure out their best "right-size" plan for AI adoption.
-                                    p.mb-0.text-white-50.mt-3
-                                        | AI is a powerful tool. Used correctly, it can be wonderfully supportive. Used incorrectly and it can cause damage. We help you use AI for powerful positive enhancements to the companies bottomline and avoid damaging errors or issues.
-                                    p.mb-0.text-white-50.mt-4
-                                        strong | Reach out today for an initial consultation. Please fill out the info below to schedule a call:
+                                .project-text.w-100.my-auto.text-center.px-5.py-5
+                                    .container-xl
+                                        h4.text-white Fractional CTO or CAIO Services
+                                        p.mb-0.text-yellow
+                                            | Whether you are early-stage or Series A or anything in between, we offer fractional CTO and CAIO -- Chief AI Officer Services to fit your needs.
+                                        p.mb-0.text-yellow.mt-3
+                                            | In discussions with our clients, we find they have a need for senior technologists with business talent. To not only solve the technical or engineering problems, but to provide the pathway to deploy the solution internally and/or externally. This requires senior, experienced talent that not many companies can afford (nor need) a full-time position for, but certainly need the experience.
+                                        h5.text-white.mt-4 Fractional CTO
+                                        p.mb-0.text-yellow
+                                            | We offer fractional CTO services for early-stage companies on a retainer-plus basis. This allows a company to have solid technical expertise to avoid major issues and save cash for expansion or pushing their company even further.
+                                        h5.text-white.mt-4 Fractional CAIO
+                                        p.mb-0.text-yellow
+                                            | We offer fractional CAIO services or Chief AI Officer. Given the fast pace of AI and its potential to disrupt, there are many challenges to watch for: competitor adoption, appropriate use (or misuse) of AI. We help all companies figure out their best "right-size" plan for AI adoption.
+                                        p.mb-0.text-yellow.mt-3
+                                            | AI is a powerful tool. Used correctly, it can be wonderfully supportive. Used incorrectly and it can cause damage. We help you use AI for powerful positive enhancements to the companies bottomline and avoid damaging errors or issues.
+                                        p.mb-0.text-yellow.mt-4
+                                            strong 
+                                                | Reach out today for an initial consultation: 
+                                                a.text-warning(href='mailto:steve@cofoundry.global') steve@cofoundry.global
+                
                 // Project Two Row
                 section#team.projects-section.bg-light
                 .row.gx-0.justify-content-center
@@ -90,9 +96,9 @@ html(lang='en')
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-right
                                     h4.text-white Team
-                                    p.mb-0.text-white-50
+                                    p.mb-0.text-yellow
                                         | The Cofoundry is run by 
-                                        a(href='https://www.linkedin.com/in/stevederezinski', target='_blank') Steve Derezinski
+                                        a.text-warning(href='https://www.linkedin.com/in/stevederezinski', target='_blank') Steve Derezinski
                                         | , Entrepreneur, Engineer and Founder.
 
         // Contact

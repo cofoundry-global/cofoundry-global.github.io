@@ -45,30 +45,40 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">Built by engineer-founders</h2>
-                        <p class="text-white-50">About the Cofoundry</p>
+                        <p class="text-yellow">About the Cofoundry</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Projects-->
         <section class="projects-section bg-light" id="strategy">
-            <div class="container px-4 px-lg-5">
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
+            <!-- Changed to container-fluid and removed padding for full width-->
+            <div class="container-fluid px-0">
+                <!-- Project One Row - Now full width-->
+                <div class="row gx-0 mb-5 mb-lg-0 position-relative">
+                    <!-- Background image now absolute positioned-->
+                    <div class="col-12 position-absolute h-100"><img class="img-fluid w-100 h-100 object-fit-cover" src="assets/img/demo-image-01.jpg" alt="..." style="object-fit: cover" /></div>
+                    <!-- Content now takes full width and overlays the image-->
+                    <div class="col-12 position-relative">
+                        <div class="bg-black bg-opacity-75 text-center h-100 project">
                             <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Fractional CTO or CAIO Services</h4>
-                                    <p class="mb-0 text-white-50">Whether you are early-stage or Series A or anything in between, we offer fractional CTO and CAIO -- Chief AI Officer Services to fit your needs.</p>
-                                    <p class="mb-0 text-white-50 mt-3">In discussions with our clients, we find they have a need for senior technologists with business talent. To not only solve the technical or engineering problems, but to provide the pathway to deploy the solution internally and/or externally. This requires senior, experienced talent that not many companies can afford (nor need) a full-time position for, but certainly need the experience.</p>
-                                    <h5 class="text-white mt-4">Fractional CTO</h5>
-                                    <p class="mb-0 text-white-50">We offer fractional CTO services for early-stage companies on a retainer-plus basis. This allows a company to have solid technical expertise to avoid major issues and save cash for expansion or pushing their company even further.</p>
-                                    <h5 class="text-white mt-4">Fractional CAIO</h5>
-                                    <p class="mb-0 text-white-50">We offer fractional CAIO services or Chief AI Officer. Given the fast pace of AI and its potential to disrupt, there are many challenges to watch for: competitor adoption, appropriate use (or misuse) of AI. We help all companies figure out their best "right-size" plan for AI adoption.</p>
-                                    <p class="mb-0 text-white-50 mt-3">AI is a powerful tool. Used correctly, it can be wonderfully supportive. Used incorrectly and it can cause damage. We help you use AI for powerful positive enhancements to the companies bottomline and avoid damaging errors or issues.</p>
-                                    <p class="mb-0 text-white-50 mt-4"><strong>| Reach out today for an initial consultation. Please fill out the info below to schedule a call:</strong></p>
+                                <div class="project-text w-100 my-auto text-center px-5 py-5">
+                                    <div class="container-xl">
+                                        <h4 class="text-white">Fractional CTO or CAIO Services</h4>
+                                        <p class="mb-0 text-yellow">Whether you are early-stage or Series A or anything in between, we offer fractional CTO and CAIO -- Chief AI Officer Services to fit your needs.</p>
+                                        <p class="mb-0 text-yellow mt-3">In discussions with our clients, we find they have a need for senior technologists with business talent. To not only solve the technical or engineering problems, but to provide the pathway to deploy the solution internally and/or externally. This requires senior, experienced talent that not many companies can afford (nor need) a full-time position for, but certainly need the experience.</p>
+                                        <h5 class="text-white mt-4">Fractional CTO</h5>
+                                        <p class="mb-0 text-yellow">We offer fractional CTO services for early-stage companies on a retainer-plus basis. This allows a company to have solid technical expertise to avoid major issues and save cash for expansion or pushing their company even further.</p>
+                                        <h5 class="text-white mt-4">Fractional CAIO</h5>
+                                        <p class="mb-0 text-yellow">We offer fractional CAIO services or Chief AI Officer. Given the fast pace of AI and its potential to disrupt, there are many challenges to watch for: competitor adoption, appropriate use (or misuse) of AI. We help all companies figure out their best "right-size" plan for AI adoption.</p>
+                                        <p class="mb-0 text-yellow mt-3">AI is a powerful tool. Used correctly, it can be wonderfully supportive. Used incorrectly and it can cause damage. We help you use AI for powerful positive enhancements to the companies bottomline and avoid damaging errors or issues.</p>
+                                        <p class="mb-0 text-yellow mt-4">
+                                            <strong>
+                                                Reach out today for an initial consultation:
+                                                <a class="text-warning" href="mailto:steve@cofoundry.global">steve@cofoundry.global</a>
+                                            </strong>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -83,9 +93,9 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Team</h4>
-                                    <p class="mb-0 text-white-50">
+                                    <p class="mb-0 text-yellow">
                                         The Cofoundry is run by
-                                        <a href="https://www.linkedin.com/in/stevederezinski" target="_blank">Steve Derezinski</a>
+                                        <a class="text-warning" href="https://www.linkedin.com/in/stevederezinski" target="_blank">Steve Derezinski</a>
                                         , Entrepreneur, Engineer and Founder.
                                     </p>
                                 </div>
