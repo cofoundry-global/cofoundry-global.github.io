@@ -17,9 +17,21 @@
     .project-text {
         padding: 3rem;
         font-size: 90%;
+        text-align: justify;
+        max-width: 800px;
+        margin: 0 auto;
 
         @include media-breakpoint-up(lg) {
             padding: 5rem;
+        }
+
+        p {
+            color: $yellow;
+            text-align: justify;
+        }
+
+        h4, h5 {
+            text-align: left;
         }
     }
 }
