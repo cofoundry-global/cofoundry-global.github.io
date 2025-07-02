@@ -11134,11 +11134,21 @@ body {
 .projects-section .project-text {
   padding: 3rem;
   font-size: 90%;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
     padding: 5rem;
   }
+}
+.projects-section .project-text p {
+  color: #e4c662;
+  text-align: justify;
+}
+.projects-section .project-text h4, .projects-section .project-text .h4, .projects-section .project-text h5, .projects-section .project-text .h5 {
+  text-align: left;
 }
 
 .signup-section {
