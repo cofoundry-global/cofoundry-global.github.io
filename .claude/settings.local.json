@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__multi-ai-collab__ask_all_ais",
+      "WebFetch(domain:cofoundry.global)",
+      "Bash(git stash:*)",
+      "Bash(npm ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run deploy:*)",
+      "Bash(npx gh-pages:*)",
+      "Bash(git fetch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git push:*)",
+      "Bash(curl:*)",
+      "Bash(git pull:*)",
+      "Bash(gh repo view:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(ls:*)",
+      "Bash(gh api:*)",
+      "Bash(cp:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}
