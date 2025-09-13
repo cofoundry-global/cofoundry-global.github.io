@@ -11211,3 +11211,262 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.bdd-guide-content {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: white;
+}
+.bdd-guide-content h1, .bdd-guide-content .h1 {
+  color: #1a202c;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid #3182ce;
+  page-break-after: avoid;
+}
+.bdd-guide-content h2, .bdd-guide-content .h2 {
+  color: #2d3748;
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  padding-left: 10px;
+  page-break-after: avoid;
+}
+.bdd-guide-content h3, .bdd-guide-content .h3 {
+  color: #4a5568;
+  font-size: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  page-break-after: avoid;
+}
+.bdd-guide-content p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.bdd-guide-content p.intro {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+.bdd-guide-content strong {
+  color: #1a202c;
+  font-weight: 600;
+}
+.bdd-guide-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: #f7fafc;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: #e53e3e;
+  border: 1px solid #e2e8f0;
+}
+.bdd-guide-content ul, .bdd-guide-content ol {
+  margin-left: 30px;
+  margin-bottom: 1em;
+}
+.bdd-guide-content li {
+  margin-bottom: 0.5em;
+}
+.bdd-guide-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.bdd-guide-content table th {
+  background: #3182ce;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+.bdd-guide-content table td {
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+}
+.bdd-guide-content table tr:nth-child(even) {
+  background: #f7fafc;
+}
+.bdd-guide-content .flow-diagram {
+  background: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 1.5em 0;
+  text-align: center;
+  page-break-inside: avoid;
+}
+.bdd-guide-content .flow-diagram .flow-box {
+  display: inline-block;
+  background: white;
+  border: 2px solid #3182ce;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.bdd-guide-content .flow-diagram .flow-box.red {
+  background: #fee;
+}
+.bdd-guide-content .flow-diagram .flow-box.green {
+  background: #efe;
+}
+.bdd-guide-content .flow-diagram .flow-box.blue {
+  background: #eef;
+}
+.bdd-guide-content .flow-diagram .flow-arrow {
+  display: inline-block;
+  margin: 0 10px;
+  color: #4299e1;
+  font-size: 1.5em;
+}
+.bdd-guide-content .pyramid {
+  margin: 2em 0;
+  text-align: center;
+  page-break-inside: avoid;
+}
+.bdd-guide-content .pyramid .pyramid-level {
+  margin: 5px auto;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.bdd-guide-content .pyramid .pyramid-level.bdd {
+  background: #e53e3e;
+  width: 40%;
+}
+.bdd-guide-content .pyramid .pyramid-level.sdd {
+  background: #dd6b20;
+  width: 60%;
+}
+.bdd-guide-content .pyramid .pyramid-level.tdd {
+  background: #38a169;
+  width: 100%;
+}
+.bdd-guide-content .highlight-box {
+  background: #edf2f7;
+  padding: 15px;
+  margin: 1em 0;
+  border-radius: 4px;
+  page-break-inside: avoid;
+}
+.bdd-guide-content .highlight-box h4, .bdd-guide-content .highlight-box .h4 {
+  color: #2b6cb8;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.bdd-guide-content .highlight-box a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+.bdd-guide-content .highlight-box a:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+.bdd-guide-content .highlight-box ul {
+  margin-bottom: 0.5em;
+}
+.bdd-guide-content .highlight-box p {
+  margin-bottom: 0.5em;
+}
+.bdd-guide-content .example-box {
+  background: #f0f9ff;
+  border: 1px solid #0ea5e9;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+.bdd-guide-content .example-box h4, .bdd-guide-content .example-box .h4 {
+  color: #0369a1;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+.bdd-guide-content .scenario {
+  background: #fef3c7;
+  padding: 15px;
+  margin: 1em 0;
+  border-radius: 4px;
+}
+.bdd-guide-content .scenario h4, .bdd-guide-content .scenario .h4 {
+  color: #92400e;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.bdd-guide-content .scenario .given-when-then {
+  margin: 0.5em 0;
+  padding-left: 20px;
+}
+.bdd-guide-content .scenario .given-when-then strong {
+  color: #92400e;
+}
+.bdd-guide-content hr {
+  border: none;
+  border-top: 2px solid #e2e8f0;
+  margin: 2em 0;
+}
+.bdd-guide-content .appendix {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 2em 0;
+  page-break-inside: avoid;
+}
+.bdd-guide-content .appendix h2, .bdd-guide-content .appendix .h2 {
+  color: #1e40af;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.bdd-guide-content .comparison-section {
+  margin: 2em 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+.bdd-guide-content .comparison-section.without-methods {
+  background: #fef2f2;
+}
+.bdd-guide-content .comparison-section.with-methods {
+  background: #f0fdf4;
+}
+.bdd-guide-content .insights-box {
+  background: #eff6ff;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 1.5em 0;
+}
+.bdd-guide-content .insights-box h4, .bdd-guide-content .insights-box .h4 {
+  color: #1e40af;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+@media print {
+  .bdd-guide-content {
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+  .bdd-guide-content h1, .bdd-guide-content .h1 {
+    font-size: 24pt;
+  }
+  .bdd-guide-content h2, .bdd-guide-content .h2 {
+    font-size: 18pt;
+  }
+  .bdd-guide-content .flow-box {
+    border-color: #666;
+  }
+  .bdd-guide-content th {
+    background: #666;
+  }
+}
