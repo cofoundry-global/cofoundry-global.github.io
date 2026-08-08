@@ -49,3 +49,6 @@ wp-config.php
 #/wp-content/themes
 
 /node_modules
+
+# Local-only source material (specs/handoff for microsites) — never publish
+7by128-group/

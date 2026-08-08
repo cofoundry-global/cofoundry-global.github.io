@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 7 by 128 Group — Seven Days a Week on Route 128 Consulting</title>
+<meta name="description" content="Seven days a week on Route 128 consulting. A standing organization of exactly 896 specialists — seven cohorts of 128 — routed continuously onto every engagement as the problem evolves.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The 7 by 128 Group — Seven Days a Week on Route 128 Consulting">
+<meta property="og:description" content="896 experts. One mission. The right team for every decision. Seven cohorts of 128, routed continuously onto every engagement.">
+<meta property="og:url" content="https://cofoundry.global/7by128/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The 7 by 128 Group">
+<meta name="twitter:description" content="896 experts. One mission. The right team for every decision.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14171C;
+  --paper:#FAFAF7;
+  --slate:#5A6068;
+  --forest:#175641;
+  --gold:#D9A62E;
+  --hairline:#E2E2DA;
+  --dot:#D8D8CF;
+  --max:1160px;
+  --serif:'Instrument Serif',Georgia,serif;
+  --sans:'Archivo',system-ui,sans-serif;
+  --mono:'Spline Sans Mono',ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.eyebrow::after{content:"";height:1px;background:var(--hairline);flex:1}
+h1,h2,h3{font-weight:400}
+h2{font-family:var(--serif);font-size:clamp(30px,4vw,44px);line-height:1.12;letter-spacing:-.01em;max-width:16em}
+.lede{color:var(--slate);max-width:38em}
+section{padding:96px 0;border-top:1px solid var(--hairline)}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--hairline)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--serif);font-size:21px;text-decoration:none;display:flex;align-items:baseline;gap:8px}
+.logo .no{font-family:var(--mono);font-size:12px;color:var(--forest);letter-spacing:.08em}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{text-decoration:none;font-size:13.5px;font-weight:500;color:var(--slate)}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--ink)}
+.nav-cta{font-family:var(--mono);font-size:12.5px;text-decoration:none;color:var(--paper);background:var(--forest);padding:9px 16px;letter-spacing:.04em}
+.nav-cta:hover{background:#0F3F2F}
+@media(max-width:820px){.nav-links{display:none}}
+:focus-visible{outline:2px solid var(--forest);outline-offset:3px}
+
+/* ---------- hero ---------- */
+.hero{border-top:none;padding:88px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:48px}}
+.hero h1{font-family:var(--serif);font-size:clamp(42px,5.6vw,68px);line-height:1.04;letter-spacing:-.015em}
+.hero h1 em{font-style:italic;color:var(--forest)}
+.hero p{margin-top:26px}
+.hero-actions{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;text-decoration:none;padding:13px 22px;border:1px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--forest);border-color:var(--forest)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+/* routing board — the signature */
+.board{border:1px solid var(--hairline);background:#fff;padding:26px 26px 20px}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--slate);text-transform:uppercase;margin-bottom:18px}
+.board-head .live{color:var(--forest)}
+.board-head .live::before{content:"●";color:var(--gold);margin-right:7px}
+#dots{display:grid;grid-template-columns:repeat(32,1fr);gap:4px}
+#dots i{display:block;aspect-ratio:1;border-radius:50%;background:var(--dot);transition:background .45s ease,box-shadow .45s ease}
+#dots i.on{background:var(--forest)}
+#dots i.mp{background:var(--gold);box-shadow:0 0 0 2px #fff,0 0 0 3.5px var(--gold)}
+.board-foot{margin-top:18px;border-top:1px solid var(--hairline);padding-top:14px;font-family:var(--mono);font-size:12.5px;color:var(--ink);min-height:44px}
+.board-foot .q{color:var(--slate)}
+.board-foot .n{color:var(--forest)}
+.board-caption{margin-top:10px;font-size:12px;color:var(--slate)}
+.board-caption b{color:var(--ink);font-weight:500}
+
+/* ---------- statement ---------- */
+.statement p{font-family:var(--serif);font-size:clamp(24px,3vw,34px);line-height:1.3;max-width:26em}
+.statement p em{color:var(--forest)}
+.statement small{display:block;margin-top:28px;font-family:var(--mono);font-size:12.5px;color:var(--slate);letter-spacing:.03em}
+
+/* ---------- model ---------- */
+.model-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:8px}
+@media(max-width:900px){.model-grid{grid-template-columns:1fr}}
+.mech{border-top:1px solid var(--hairline);padding:26px 0 30px}
+.mech .id{font-family:var(--mono);font-size:12px;color:var(--forest);letter-spacing:.1em}
+.mech h3{font-family:var(--serif);font-size:24px;margin:10px 0 10px}
+.mech p{color:var(--slate);font-size:15px;max-width:34em}
+.log{background:var(--ink);color:#C9CDC6;font-family:var(--mono);font-size:12.5px;line-height:1.85;padding:26px 28px;overflow:auto}
+.log .k{color:var(--gold)}
+.log .g{color:#7CC6A4}
+.log .c{color:#6E7570}
+.log-title{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);margin-bottom:12px}
+
+/* ---------- practices ---------- */
+.practice-cols{column-count:4;column-gap:44px;margin-top:44px}
+@media(max-width:1000px){.practice-cols{column-count:3}}
+@media(max-width:760px){.practice-cols{column-count:2}}
+@media(max-width:520px){.practice-cols{column-count:1}}
+.pgroup{break-inside:avoid;margin-bottom:34px}
+.pgroup h3{font-size:14px;font-weight:600;letter-spacing:.01em;padding-bottom:10px;border-bottom:1px solid var(--hairline);margin-bottom:12px;display:flex;justify-content:space-between;align-items:baseline}
+.pgroup h3 span{font-family:var(--mono);font-size:11px;color:var(--forest);font-weight:400}
+.pgroup ul{list-style:none}
+.pgroup li{font-size:13.5px;color:var(--slate);padding:3.5px 0}
+
+/* ---------- engagements ---------- */
+.eng-list{margin-top:36px}
+.eng{display:grid;grid-template-columns:220px 1fr 210px;gap:36px;padding:34px 0;border-top:1px solid var(--hairline)}
+@media(max-width:900px){.eng{grid-template-columns:1fr;gap:14px}}
+.eng .sector{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--forest)}
+.eng h3{font-family:var(--serif);font-size:23px;margin-bottom:8px}
+.eng p{color:var(--slate);font-size:15px;max-width:44em}
+.eng .stat{font-family:var(--mono);font-size:12.5px;color:var(--ink);text-align:right}
+@media(max-width:900px){.eng .stat{text-align:left}}
+.eng .stat b{display:block;font-size:26px;font-weight:500;color:var(--forest)}
+.eng .stat span{color:var(--slate)}
+
+/* ---------- roster ---------- */
+.roster-intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:900px){.roster-intro{grid-template-columns:1fr}}
+.comp{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
+.comp td{padding:9px 0;border-bottom:1px solid var(--hairline)}
+.comp td:last-child{text-align:right;font-family:var(--mono);color:var(--forest)}
+.comp tr.total td{font-weight:600;color:var(--ink)}
+.comp tr.total td:last-child{color:var(--ink)}
+.bios{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline);border:1px solid var(--hairline);margin-top:52px}
+@media(max-width:1000px){.bios{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.bios{grid-template-columns:1fr}}
+.bio{background:#fff;padding:26px 24px 28px}
+.bio .eid{font-family:var(--mono);font-size:12px;color:var(--forest);letter-spacing:.08em}
+.bio h3{font-family:var(--serif);font-size:20px;margin:8px 0 4px}
+.bio .role{font-size:13px;font-weight:500;margin-bottom:10px}
+.bio p{font-size:13px;color:var(--slate)}
+.roster-note{margin-top:22px;font-size:12.5px;color:var(--slate);max-width:52em}
+
+/* ---------- testimonials ---------- */
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:40px}
+@media(max-width:820px){.quotes{grid-template-columns:1fr}}
+blockquote{border-left:2px solid var(--forest);padding-left:24px}
+blockquote p{font-family:var(--serif);font-size:20px;line-height:1.45}
+blockquote footer{margin-top:14px;font-family:var(--mono);font-size:12px;color:var(--slate);letter-spacing:.03em}
+
+/* ---------- contact / footer ---------- */
+.contact{background:var(--ink);color:var(--paper)}
+.contact .eyebrow{color:var(--gold)}
+.contact .eyebrow::after{background:#2A2F37}
+.contact h2{color:var(--paper)}
+.contact .lede{color:#A9AEA8}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr}}
+.contact .btn{border-color:var(--gold);color:var(--gold);display:inline-block;margin-top:30px}
+.contact .btn:hover{background:var(--gold);color:var(--ink)}
+.offices{font-family:var(--mono);font-size:13px;line-height:2.1;color:#A9AEA8}
+.offices b{color:var(--paper);font-weight:500}
+footer.site{border-top:1px solid var(--hairline);padding:34px 0;font-size:12.5px;color:var(--slate)}
+footer.site .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer.site .fine{font-family:var(--mono);font-size:11.5px}
+.disclaimer{border-top:1px solid var(--hairline);margin-top:26px;padding-top:18px;font-size:11.5px;line-height:1.7;color:#8A8F96;max-width:64em}
+.disclaimer a{color:#8A8F96}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">The 7 by 128 Group <span class="no">LLP</span></a>
+    <ul class="nav-links">
+      <li><a href="#model">The Model</a></li>
+      <li><a href="#practices">Practice Areas</a></li>
+      <li><a href="#engagements">Engagements</a></li>
+      <li><a href="#roster">The Roster</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">Begin a routing inquiry</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow" style="max-width:34em">Seven days a week on Route&nbsp;128 consulting</div>
+      <h1>896 experts.<br>One mission.<br><em>The right team for every decision.</em></h1>
+      <p class="lede">Most firms assign a fixed team to your problem. From our headquarters on Route 128, we maintain a standing roster of exactly 896 world-class specialists — seven cohorts of 128 — and route the right ones onto your engagement, continuously, as the problem evolves.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#model">How routing works</a>
+        <a class="btn ghost" href="#engagements">Featured engagements</a>
+      </div>
+    </div>
+    <figure class="board" aria-label="Live visualization of expert activation across the 896-member roster">
+      <div class="board-head"><span>Roster · 896 specialists</span><span class="live">Router — live</span></div>
+      <div id="dots" aria-hidden="true"></div>
+      <div class="board-foot" id="foot" aria-live="polite"></div>
+      <figcaption class="board-caption">Each mark is one expert. <b>Gold</b>: your two Managing Partners, active for the life of the engagement. <b>Green</b>: specialists currently activated. The rest are dormant — and cost you nothing.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="wrap reveal">
+    <div class="eyebrow">Why clients choose us</div>
+    <p>Traditional firms organize around departments. We organize around <em>problems</em>. As new information arrives, specialists rotate in precisely when their expertise creates the greatest value — patent attorneys beside computational chemists, manufacturing veterans reviewing software architectures.</p>
+    <small>On average, 9 of our 896 experts are active on your engagement at any moment. We consider this our most important number.</small>
+  </div>
+</section>
+
+<section id="model">
+  <div class="wrap">
+    <div class="eyebrow">The model · Dynamic Expert Routing</div>
+    <h2 class="reveal">The team is an output of the problem — recomputed continuously.</h2>
+    <div class="model-grid" style="margin-top:44px">
+      <div>
+        <div class="mech reveal">
+          <span class="id">MECHANISM 01</span>
+          <h3>Two Managing Partners, always</h3>
+          <p>Every engagement is anchored by exactly two Managing Partners — never one, never three — attached from kickoff through implementation. One partner gives you an opinion. Two give you a decision.</p>
+        </div>
+        <div class="mech reveal">
+          <span class="id">MECHANISM 02</span>
+          <h3>The Router</h3>
+          <p>Our staffing platform scores your engagement's current state against the competence profile of all 896 experts, every week. When a dormant expert's marginal value crosses threshold, they are activated: briefed in 24 hours, contributing in 48. The Router proposes; your two partners confirm.</p>
+        </div>
+        <div class="mech reveal">
+          <span class="id">MECHANISM 03</span>
+          <h3>Handback memos</h3>
+          <p>Every deactivation produces a short written memo — what I found, what I changed, what I would watch. Memos accumulate, so a team whose membership changes weekly behaves like one that has worked together for years.</p>
+        </div>
+        <div class="mech reveal">
+          <span class="id">MECHANISM 04</span>
+          <h3>Activation billing</h3>
+          <p>You are billed only for activated expert-time plus a fixed partner retainer. Dormant experts cost nothing. Our incentive is sparsity: the best engagement is solved by the fewest, best-chosen people.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="log-title">Sample activation log · engagement 2025-EU-114 (excerpt)</div>
+        <pre class="log">wk 07  <span class="g">ACTIVATE</span>    E-0447  patent litigation
+       <span class="c">reason: claim-construction dispute, DE + JP</span>
+wk 07  <span class="g">ACTIVATE</span>    E-0341  distributed systems
+       <span class="c">reason: settlement-layer architecture review</span>
+wk 08  <span class="k">DEACTIVATE</span>  E-0663  lean manufacturing
+       <span class="c">handback memo filed · 0.8 pp</span>
+wk 09  <span class="g">ACTIVATE</span>    E-0790  behavioral economics
+       <span class="c">reason: cold read, final recommendation</span>
+wk 09  <span class="c">note: MP pair unchanged since wk 00</span>
+wk 10  <span class="c">active set: 9 of 896 · utilization 1.00%</span></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="practices">
+  <div class="wrap">
+    <div class="eyebrow">Practice areas</div>
+    <h2 class="reveal">Eight domains. One roster. No silos.</h2>
+    <div class="practice-cols reveal">
+      <div class="pgroup"><h3>Corporate Strategy <span>×54</span></h3><ul><li>Growth Strategy</li><li>Competitive Positioning</li><li>Market Entry</li><li>Mergers &amp; Acquisitions</li><li>Corporate Restructuring</li><li>Digital Transformation</li><li>Private Equity Due Diligence</li><li>Executive Decision Support</li></ul></div>
+      <div class="pgroup"><h3>Finance <span>×141</span></h3><ul><li>Investment Banking Advisory</li><li>Valuation &amp; Capital Markets</li><li>Financial Modeling</li><li>Portfolio Risk &amp; Credit</li><li>Quantitative Finance</li><li>Structured Products</li><li>Insurance Economics</li><li>Economic Forecasting</li></ul></div>
+      <div class="pgroup"><h3>Law &amp; IP <span>×96</span></h3><ul><li>Patent Strategy</li><li>Trade Secret Protection</li><li>Regulatory Analysis</li><li>International Compliance</li><li>Antitrust &amp; Privacy</li><li>Cybersecurity Law</li><li>Expert Witness Support</li><li>Litigation Analytics</li></ul></div>
+      <div class="pgroup"><h3>Science &amp; Engineering <span>×214</span></h3><ul><li>Mechanical &amp; Electrical</li><li>Materials Science</li><li>Semiconductor Manufacturing</li><li>Chemical Engineering</li><li>Climate &amp; Energy Systems</li><li>Robotics &amp; Control Systems</li><li>Quantum Computing</li><li>Applied Mathematics</li></ul></div>
+      <div class="pgroup"><h3>Artificial Intelligence <span>×138</span></h3><ul><li>Foundation Models</li><li>Model Evaluation</li><li>LLM Deployment</li><li>Inference Optimization</li><li>Distributed Systems</li><li>GPU Computing &amp; Compilers</li><li>Computer Vision &amp; Speech</li><li>Multi-Agent Architectures</li></ul></div>
+      <div class="pgroup"><h3>Healthcare <span>×94</span></h3><ul><li>Drug Discovery</li><li>Medical Devices</li><li>Clinical Trial Design</li><li>Hospital Operations</li><li>Healthcare Economics</li><li>Bioinformatics</li><li>Regulatory Affairs</li><li>Precision Medicine</li></ul></div>
+      <div class="pgroup"><h3>Manufacturing <span>×88</span></h3><ul><li>Lean Operations</li><li>Automation &amp; Robotics</li><li>Factory Design</li><li>Supply Chain</li><li>Quality Systems &amp; Six Sigma</li><li>Digital Twins</li><li>Predictive Maintenance</li></ul></div>
+      <div class="pgroup"><h3>Government &amp; Policy <span>×71</span></h3><ul><li>National Security</li><li>Infrastructure &amp; Transport</li><li>Water &amp; Energy Systems</li><li>Economic Development</li><li>Public Finance</li><li>Emergency Management</li><li>International Development</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="engagements">
+  <div class="wrap">
+    <div class="eyebrow">Featured engagements</div>
+    <h2 class="reveal">Teams that evolved as the problem did.</h2>
+    <div class="eng-list">
+      <article class="eng reveal">
+        <div class="sector">Fortune 50 Bank</div>
+        <div><h3>Enterprise risk modernization</h3><p>Hundreds of fragmented risk models consolidated into a unified platform. Quantitative finance specialists, distributed-systems architects, former banking regulators, behavioral economists and governance advisors rotated through as the work demanded. Model development time fell 62%; enterprise risk is now monitored in real time across global markets.</p></div>
+        <div class="stat"><b>34</b>experts activated<br><span>over engagement lifetime</span></div>
+      </article>
+      <article class="eng reveal">
+        <div class="sector">Global Pharma</div>
+        <div><h3>Accelerating oncology discovery</h3><p>Medicinal chemists, protein-folding researchers, statistical geneticists, ML scientists, FDA specialists and health economists collaborated across early discovery. Candidate evaluation cycles fell by nearly half while regulatory readiness strengthened ahead of Phase I planning.</p></div>
+        <div class="stat"><b>28</b>experts activated<br><span>over engagement lifetime</span></div>
+      </article>
+      <article class="eng reveal">
+        <div class="sector">International Law Firm</div>
+        <div><h3>Multi-jurisdiction IP defense</h3><p>Simultaneous patent disputes across North America, Europe and Asia. Patent attorneys, semiconductor engineers, compiler specialists, damages economists and linguists formed one litigation-support team — instead of four consulting firms. Discovery costs fell substantially.</p></div>
+        <div class="stat"><b>22</b>experts activated<br><span>over engagement lifetime</span></div>
+      </article>
+      <article class="eng reveal">
+        <div class="sector">Aerospace Manufacturer</div>
+        <div><h3>Next-generation flight systems</h3><p>Reliability, unit cost, certification readiness and software safety improved simultaneously. Control-systems engineers, avionics and human-factors specialists, certification consultants and AI-safety researchers carried the design into certification with markedly fewer open issues than comparable programs.</p></div>
+        <div class="stat"><b>41</b>experts activated<br><span>over engagement lifetime</span></div>
+      </article>
+      <article class="eng reveal">
+        <div class="sector">National Infrastructure</div>
+        <div><h3>Modernizing water networks</h3><p>Hydrologists, civil engineers, cybersecurity specialists, GIS analysts, climate scientists and policy experts built an integrated modernization roadmap balancing resilience, environmental performance and long-term capital efficiency. Our largest activation set to date.</p></div>
+        <div class="stat"><b>61</b>experts activated<br><span>firm record</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="roster">
+  <div class="wrap">
+    <div class="eyebrow">The roster</div>
+    <div class="roster-intro">
+      <div class="reveal">
+        <h2>Exactly 896. Not one more, not one fewer.</h2>
+        <p class="lede" style="margin-top:22px">The roster is closed and fixed in size. When an expert retires, exactly one is admitted — by unanimous consent of the Managing Partner pool, after a full-day adversarial review by nine serving experts chosen by the Router. There is no application process; the firm approaches you.</p>
+        <p class="lede" style="margin-top:16px">Why 896? The name does the arithmetic: seven cohorts of 128 experts each, one cohort convening every day of the week — the origin of our founding promise, <em>seven days a week on Route 128</em>. Large enough that no client problem falls outside the roster’s combined competence; small enough that every expert remains individually known to the partnership.</p>
+      </div>
+      <div class="reveal">
+        <table class="comp" aria-label="Roster composition by domain">
+          <tr><td>Science &amp; Engineering</td><td>214</td></tr>
+          <tr><td>Finance &amp; Economics</td><td>141</td></tr>
+          <tr><td>Software, AI &amp; Data</td><td>138</td></tr>
+          <tr><td>Law &amp; Intellectual Property</td><td>96</td></tr>
+          <tr><td>Healthcare &amp; Life Sciences</td><td>94</td></tr>
+          <tr><td>Manufacturing &amp; Operations</td><td>88</td></tr>
+          <tr><td>Government &amp; Public Policy</td><td>71</td></tr>
+          <tr><td>Strategy, Org &amp; Communications</td><td>54</td></tr>
+          <tr class="total"><td>Total roster</td><td>896</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="bios">
+      <div class="bio reveal"><span class="eid">E-0117</span><h3>Dr. Priya Raghunathan</h3><div class="role">Computational Chemistry</div><p>Fifteen years in structure-based drug design; previously led molecular simulation at a top-five pharmaceutical company. Most often activated alongside E-0688 and E-0209.</p></div>
+      <div class="bio reveal"><span class="eid">E-0341</span><h3>Sofia Lindqvist</h3><div class="role">Distributed Systems</div><p>Built settlement infrastructure for two European exchanges. Shortest median activation on the roster: 11 days. "I am called when something must not fall over. Then I leave."</p></div>
+      <div class="bio reveal"><span class="eid">E-0447</span><h3>Daniel Okonkwo, Esq.</h3><div class="role">Patent Litigation</div><p>Argued before the Federal Circuit nine times; degrees in electrical engineering and law. Roster record for simultaneous jurisdiction coverage on one engagement: seven.</p></div>
+      <div class="bio reveal"><span class="eid">E-0790</span><h3>Miguel Serrano</h3><div class="role">Behavioral Economics</div><p>Runs the firm's "cold read" panels. Has formally disagreed with the final recommendation on fourteen engagements — a fact the firm advertises.</p></div>
+    </div>
+    <p class="roster-note">Experts appear on activation logs by roster number until activated on your engagement, at which point full identity and credentials are disclosed. The firm does not disclose the identities of experts not activated on your engagement.</p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="wrap">
+    <div class="eyebrow">Client testimonials</div>
+    <div class="quotes">
+      <blockquote class="reveal"><p>During a single week we had quantitative traders, distributed-systems engineers, former banking regulators, and organizational psychologists solving the same problem together. No traditional firm could have assembled that combination.</p><footer>Chief Risk Officer · Global Investment Bank</footer></blockquote>
+      <blockquote class="reveal"><p>Instead of hiring four consulting firms, we worked with one.</p><footer>Managing Partner · International IP Law Firm</footer></blockquote>
+      <blockquote class="reveal"><p>Economists questioned our engineering decisions. Engineers questioned our financial models. Both were right.</p><footer>CEO · Climate Technology Startup</footer></blockquote>
+      <blockquote class="reveal"><p>Most consultants spend weeks learning your business. Their specialists seemed to arrive already speaking the language of the problem.</p><footer>Chief Scientific Officer · Global Biotechnology Company</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="eyebrow">Begin a routing inquiry</div>
+      <h2>Tell us the problem. We'll compute the team.</h2>
+      <p class="lede" style="margin-top:20px">Every engagement begins with executive interviews and discovery. Within two weeks, your two Managing Partners present the initial activation set — and the first version of the team your problem actually requires.</p>
+      <a class="btn" href="mailto:inquiries@7by128group.example">inquiries@7by128group.example</a>
+    </div>
+    <div class="offices reveal">
+      <b>Waltham, MA — Headquarters</b><br>728 Winter Street, Route 128 corridor<br><br>
+      <b>Zurich</b><br>Talstrasse 41<br><br>
+      <b>Singapore</b><br>8 Marina View, #33-01
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 The 7 by 128 Group LLP. All rights reserved.</span>
+    <span class="fine">Roster: 7 × 128 = 896 · Active per engagement: 9 (avg) · Managing Partners: always 2 · Open seven days</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer">The 7 by 128 Group LLP is a fictional firm and this site is a work of design fiction, published by <a href="https://cofoundry.global/">Cofoundry Global</a>. The partnership, its experts, clients, offices, engagements, testimonials and statistics are invented; any resemblance to a real organization or person is coincidental. Nothing here is an offer of consulting services.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // --- routing board: 896 dots = 32 x 28 ---
+  var grid=document.getElementById('dots'),foot=document.getElementById('foot');
+  var N=896,frag=document.createDocumentFragment(),dots=[];
+  for(var i=0;i<N;i++){var d=document.createElement('i');frag.appendChild(d);dots.push(d);}
+  grid.appendChild(frag);
+  // two fixed Managing Partners
+  var MP=[413,482];
+  MP.forEach(function(i){dots[i].classList.add('mp');});
+
+  var queries=[
+    ["Multi-jurisdiction patent defense",11],
+    ["Enterprise risk modernization",9],
+    ["Oncology discovery acceleration",12],
+    ["Flight-systems certification readiness",10],
+    ["National water-network resilience",14],
+    ["Foundation-model deployment review",8],
+    ["Factory automation \u0026 digital twin design",9],
+    ["Cross-border restructuring",7]
+  ];
+  var qi=0,active=[];
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function route(){
+    active.forEach(function(i){dots[i].classList.remove('on');});
+    active=[];
+    var q=queries[qi%queries.length],k=q[1];
+    while(active.length<k){
+      var r=Math.floor(Math.random()*N);
+      if(MP.indexOf(r)===-1&&active.indexOf(r)===-1){active.push(r);}
+    }
+    active.forEach(function(i,idx){
+      if(reduced){dots[i].classList.add('on');}
+      else{setTimeout(function(){dots[i].classList.add('on');},idx*90);}
+    });
+    foot.innerHTML='<span class="q">query:</span> '+q[0]+'<br><span class="q">routed:</span> <span class="n">'+k+' of 896 experts activated</span> · 2 MPs constant';
+    qi++;
+  }
+  route();
+  if(!reduced){setInterval(route,4600);}
+
+  // --- scroll reveals ---
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+  }
+})();
+</script>
+</body>
+</html>
